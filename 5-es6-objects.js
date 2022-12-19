@@ -32,7 +32,7 @@ const product = {
 // const { lebal: pppplebal, stock: uuustock, rating = 5} = product // rename | set up default
 // console.log(pppplebal, uuustock, rating)
 
-const transaction = (type, { lebal, stock }) => {
+const transaction = (type, { lebal, stock=0 } = {} ) => {
 	console.log(type, lebal, stock);
 };
 
